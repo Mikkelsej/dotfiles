@@ -1,6 +1,6 @@
 # Download Apps
 sudo pacman -S yay discord libinput xorg-xinput
-yay -S code spotify libinput-gestures
+yay -S visual-studio-code-bin spotify libinput-gestures
 
 # Add user to input group
 sudo gpasswd -a $USER input
@@ -25,6 +25,8 @@ ssh -T git@github.com
 
 # Change url to for using SSH
 git remote set-url origin git@github.com:Mikkelsej/dotfiles.git
+
+# Log in to vs code, discord, spotify, chrome
 
 # Reboot
 reboot
