@@ -23,6 +23,8 @@ cat ~/.ssh/id_rsa.pub
 ## Check that it works
 ssh -T git@github.com
 
+# Change url to for using SSH
+git remote set-url origin git@github.com:Mikkelsej/dotfiles.git
 
 # Reboot
-
+reboot
