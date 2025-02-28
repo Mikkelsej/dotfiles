@@ -1,6 +1,6 @@
 # Download Apps
 sudo pacman -S yay discord libinput xorg-xinput gparted xorg-xhost
-yay -S visual-studio-code-bin spotify libinput-gestures
+yay -S visual-studio-code-bin spotify libinput-gestures obsidian
 
 # Add user to input group
 sudo gpasswd -a $USER input
