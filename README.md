@@ -7,8 +7,8 @@ sudo gpasswd -a $USER input
 
 # Create symlink in config with at .config/
 sudo rm /etc/libinput-gestures.conf
-sudo ln -sf ~/dotfiles/libinput-gestures.conf /etc/libinput-gestures.conf
-sudo ln -sf ~/dotfiles/libinput-gestures.conf ~/.config
+sudo ln -sf ~/dotfiles/.config/libinput-gestures.conf /etc/libinput-gestures.conf
+sudo ln -sf ~/dotfiles/.config/libinput-gestures.conf ~/.config
 
 # Remove dotfiles
 rm -rf Dotfiles/
