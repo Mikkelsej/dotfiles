@@ -1,0 +1,28 @@
+# Download Apps
+sudo pacman -S yay discord libinput xorg-xinput
+yay -S code spotify libinput-gestures
+
+# Add user to input group
+sudo gpasswd -a $USER input
+
+# Create symlink in config with at .config/
+ln -s /dotfiles/libinput-gestures.conf ~/.config/libinput-gestures.conf
+
+# Remove dotfiles
+rm -rf Dotfiles/
+
+# Clone
+git clone https://github.com/Mikkelsej/dotfiles.git
+
+# Add your github SSH key with
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+## Copy into github
+cat ~/.ssh/id_rsa.pub
+## Check that it works
+ssh -T git@github.com
+
+
+# Reboot
+
